@@ -11,7 +11,7 @@ export class AppComponent {
 }
 
 window.onscroll = function () {
-  let top = window.scrollY;
+  const top = window.scrollY;
   if (top >= 100) {
     header?.classList.add('navbarDark');
   }
