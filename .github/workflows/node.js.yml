@@ -29,3 +29,5 @@ jobs:
     - run: npm ci
     - run: npm run test:prod
     - run: npm run lint
+    - run: ng build --prod
+    - run: ngh --dir=dist/portfolio
