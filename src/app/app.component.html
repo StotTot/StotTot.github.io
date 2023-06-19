@@ -1,8 +1,8 @@
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-
+ <!-- nav bar -->
 <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Aristotle</a>
+    <a class="navbar-brand" href="#home">Aristotle</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,21 +10,169 @@
       <div class="navbar-nav">
         <a class="nav-link" href="#about">About Me</a>
         <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#skills">Skills & Experience</a>
+        <a class="nav-link" href="#experience">Experience</a>
         <a class="nav-link" href="#contact">Contact</a>
       </div>
     </div>
   </div>
 </nav>
-
-<section id="about" class="bgimage">
+<!-- home -->
+<section id="home" class="bgimage">
   <div class="header">
-    <img class="me" alt="me">
     <br>
     <h1 style="font-weight: bold;">Howdy, my name is Aristotle!</h1>
     <p>I am a full stack software developer!</p>
   </div> 
 </section>
-<section id="projects">poop</section>
-<section id="skills">poop</section>
+<!-- about -->
+<section id="about">
+  <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+          <div class="col-lg-4">
+              <img src="https://avatars.githubusercontent.com/u/22485477?s=400&u=d1829ed9a0494d119401dc9cc15e36f7edfe379f&v=4" class="imageAboutPage" alt="thatsme" >
+          </div>
+
+          <div class="col-lg-8">
+              <p>
+                Experienced software developer with a demonstrated history of working in the customer services industry.
+                I graduated from SUNY Fredonia with a B.S. in Computer Science.
+                I am an aficianado of optical image recognition and game development.
+                I am very quick learner and I enjoy training others.
+              </p>
+              <div class="row mt-3">
+                  <div class="col-md-6">
+                      <ul>
+                          <li>Name: Aristotle DeBride</li>
+                          <li>Age: 25</li>
+                          <li>Occupation: Software Developer</li>
+                          <li>Hobbies:</li>
+                          <ul>
+                            <li>Cars and automotive sports</li>
+                            <li>Learning new languages</li>
+                            <li>Esports</li>
+                            <li>Firearms</li>
+                            <li>Music</li>
+                          </ul>
+                      </ul>
+                  </div>
+                  <p> 
+                    Technologies that I have used.
+                  </p>
+                  <div class="col-md-6">
+                    <ul>
+                        <li>Java <img src="https://www.kindpng.com/picc/m/198-1984828_java-icon-transparent-hd-png-download.png" class="icon" alt="java"></li>
+                        <li>Spring Framework <img src="https://ih1.redbubble.net/image.195575713.9130/flat,800x800,075,f.jpg" class="icon" alt="spring"></li>
+                        <li>PostgreSQL <img src="https://blog.romsolutions.es/wp-content/uploads/2020/11/postgresql_logo.png" class="icon" alt="postgresql"></li>
+                        <li>Python <img src="https://www.pinclipart.com/picdir/middle/534-5345877_python-logo-clipart.png" class="icon" alt="python"></li>
+                        <li>Angular <img src="https://www.techprd.com/wp-content/uploads/2017/11/Angular-1024x985.png" class="icon" alt="Angular"></li>
+                        <li>HTML & CSS <img src="https://i.pinimg.com/originals/ae/f0/ba/aef0ba961a3570b3f633f48a978a9965.png" class="icon" alt="HTML"> <img src="https://www.techdevl.com/staff/css/img/imglogo.png" class="icon" alt="CSS"></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+<!-- projects -->
+<section id="projects">
+  <div class="container mt-3">
+    <h1 class="text-center">Projects</h1>
+    <div class="row">
+        <div class="col-lg-4 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="https://user-images.githubusercontent.com/22485477/234639517-968ee8da-5342-47b2-b82b-b032350056a1.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Receipt parser</h4>
+                    <p class="card-text">An api to parse data from store receipts.</p>
+                    <div class="text-center">
+                        <a href="https://github.com/StotTot/Receipt_Parser" class="btn btn-success">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+                <img class="card-img-top" src="https://user-images.githubusercontent.com/22485477/234641745-b6c2375d-6106-41f0-afab-ee913da10a67.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Parser sharp</h4>
+                    <p class="card-text">A UI made for https://github.com/StotTot/Receipt_Parser written in C#.</p>
+                    <div class="text-center">
+                        <a href="https://github.com/StotTot/ParserSharp" class="btn btn-success">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+            <div class="card portfolioContent">
+                <img class="card-img-top" src="https://camo.githubusercontent.com/0c573ab60d7d2386e114feb2ba460339b566528054e59e2115a331379810d3a6/68747470733a2f2f692e696d6775722e636f6d2f62616f4f66684c2e706e67" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">E-Auction</h4>
+                    <p class="card-text">A single page web app that is used by the seller to mangage their auctions.</p>
+                    <div class="text-center">
+                        <a href="https://github.com/StotTot/E-Auction" class="btn btn-success">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+</section>
+
+<!-- experience -->
+<section id="experience">
+  <div class="container mt-3">
+    <h1 class="text-center">Experience</h1>
+    <div class="row">
+        <div class="col-lg-4 mt-4">
+            <div class="card">
+                <img class="card-img-top" src="../assets/images/fred.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">B.S. Computer Science</h4>
+                    <p class="card-text">Graduated from the State University of New York at Fredonia.</p>
+                    <p class="card-text">2016 - 2020</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 mt-4">
+          <div class="card">
+              <img class="card-img-top" src="../assets/images/fred.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Student Technician II</h4>
+                <p class="card-text">Responsibilities:</p>
+                <ul>
+                  <li>Utilized Jira to manage and track tickets. </li>
+                  <li>Respond to tickets and provide a solution for the customer’s issue. </li>
+                  <li>If needed, the solution would be applied anywhere on campus. </li>
+                  <li>Collaborated with a small team on larger tickets. </li>
+                </ul>
+                <p class="card-text">2018 - 2020</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4 mt-4">
+        <div class="card">
+            <img class="card-img-top" src="https://ww1.prweb.com/prfiles/2018/01/03/15051815/Revature_CMYK.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Full Stack Software Engineer</h4>
+              <p class="card-text">Responsibilities:</p>
+              <ul>
+                <li>Worked on client projects (Cognizant)</li>
+                <li>Responsible for building full stack applications using Spring framework/Java/Angular/PostgreSQL.</li>
+                <li>Work in an agile project management setting.</li>
+              </ul>
+              <p class="card-text">2021 - 2023</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+</div>
+</section>
+<!-- contact -->
 <section id="contact">poop</section>

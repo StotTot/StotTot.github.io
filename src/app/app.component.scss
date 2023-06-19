@@ -6,7 +6,7 @@
   }
 
   .bgimage {
-    height: 70vh;
+    height: 50vh;
     background: url("../assets/images/banner.jpg");
     background-size:cover;
     position:relative;
@@ -20,4 +20,13 @@
     float:left;
     margin: auto;
     position: relative;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.imageAboutPage {
+  width: 100%;
 }
