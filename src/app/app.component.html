@@ -1,6 +1,6 @@
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
  <!-- nav bar -->
-<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<nav class="navbar bg-dark navbar-expand-lg fixed-top bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#home">Aristotle</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,11 @@
       <h1 class="text-center">About Me</h1>
       <div class="row mt-4">
           <div class="col-lg-4">
-              <img src="https://avatars.githubusercontent.com/u/22485477?s=400&u=d1829ed9a0494d119401dc9cc15e36f7edfe379f&v=4" class="imageAboutPage" alt="thatsme" >
+              <img class="me imageAboutPage" alt="thatsme" >
           </div>
 
           <div class="col-lg-8">
+            <br>
               <p>
                 Experienced software developer with a demonstrated history of working in the customer services industry.
                 I graduated from SUNY Fredonia with a B.S. in Computer Science.
@@ -175,4 +176,23 @@
 </div>
 </section>
 <!-- contact -->
-<section id="contact">poop</section>
+<section id="contact">
+  <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
+
+          <div>
+              <!-- form fields -->
+              <form>
+                  <input type="text" name="name" [(ngModel)]=name class="form-control form-control-lg" placeholder="Name">
+                  <input type="email" name="email" [(ngModel)]=email class="form-control mt-3" placeholder="Email">
+                  <input type="text" name="subject" [(ngModel)]=subject class="form-control mt-3" placeholder="Subject">
+                  <div class="mb-3 mt-3">
+                      <textarea class="form-control" name="message" [(ngModel)]=message rows="5" placeholder="Insert your message here."></textarea>
+                  </div>
+              </form>
+              <button (click)="postComment()" type="button" class="btn btn-success mt-3 contact-button">Send</button>
+              
+          </div>
+
+      </div>
+</section>

@@ -14,7 +14,6 @@
 
 .me {
     content: url("https://avatars.githubusercontent.com/u/22485477?s=400&u=d1829ed9a0494d119401dc9cc15e36f7edfe379f&v=4");
-    border-radius: 50%;
     max-width: 100%;
     height: auto;
     float:left;
@@ -29,4 +28,18 @@
 
 .imageAboutPage {
   width: 100%;
+}
+
+form { 
+  margin: 0 auto; 
+  max-width: 100%;
+  }
+
+.contact-button {
+  width: 25%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  size: 100%;
 }
