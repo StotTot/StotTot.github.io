@@ -15,7 +15,7 @@ export class CommentService {
 
     console.log(comment)
 
-    return this.http.request('POST', 'http://127.0.0.1:5000/api/comments', 
+    return this.http.request('POST', 'https://aristotle-portfolio-api-3da592118493.herokuapp.com/api/comments', 
       {
         body:comment,
         responseType:'json',
