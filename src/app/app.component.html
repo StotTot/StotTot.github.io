@@ -38,8 +38,8 @@
               <p>
                 Experienced software developer with a demonstrated history of working in the customer services industry.
                 I graduated from SUNY Fredonia with a B.S. in Computer Science.
-                I am an aficianado of optical image recognition and game development.
-                I am very quick learner and I enjoy training others.
+                I am an aficionado of optical image recognition and game development.
+                I am a very quick learner and I enjoy training others.
               </p>
               <div class="row mt-3">
                   <div class="col-md-6">
@@ -111,7 +111,7 @@
                 <img class="card-img-top" src="https://camo.githubusercontent.com/0c573ab60d7d2386e114feb2ba460339b566528054e59e2115a331379810d3a6/68747470733a2f2f692e696d6775722e636f6d2f62616f4f66684c2e706e67" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">E-Auction</h4>
-                    <p class="card-text">A single page web app that is used by the seller to mangage their auctions.</p>
+                    <p class="card-text">A single page web app that is used by the seller to manage their auctions.</p>
                     <div class="text-center">
                         <a href="https://github.com/StotTot/E-Auction" class="btn btn-success">Link</a>
                     </div>
@@ -190,12 +190,20 @@
                       <textarea class="form-control" name="message" [(ngModel)]=message rows="5" placeholder="Insert your message here."></textarea>
                   </div>
               </form>
-              <button (click)="postComment()" type="button" class="btn btn-success mt-3 contact-button">Send</button>
+              <button (click)="postComment()" type="button" class="btn btn-success mt-3 contact-button" id="commentBtn">Send</button>
               
           </div>
 
       </div>
+      
 </section>
+<div class="toast-container position-fixed bottom-0 end-0 p-5">
+  <div id="sentToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      Message sent.
+    </div>
+  </div>
+</div>
 
 <!-- footer -->
 <footer id="footer">

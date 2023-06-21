@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { Comment } from 'src/app/models/comment';
 import { CommentService } from './services/comment.service';
-
+import { Toast } from 'bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -19,17 +19,14 @@ export class AppComponent {
   comment?:Comment
 
   constructor(private commentService:CommentService) { }
-
+  
   postComment(){
     this.comment = new Comment(this.name, this.email, this.subject, this.message)
     this.commentService.addComment(this.comment).subscribe((data)=>{
       this.comment = data;
-      console.log(this.comment);
     });
+    const toastBootstrap = Toast.getOrCreateInstance('#sentToast')
+    toastBootstrap.show()
   }
-  
-
 }
-
-
 
