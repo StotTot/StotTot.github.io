@@ -1,24 +1,24 @@
 .header {
-    padding: 60px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-  }
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
 
-  .bgimage {
-    height: 50vh;
-    background: url("../assets/images/banner.jpg");
-    background-size:cover;
-    position:relative;
+.bgimage {
+  height: 50vh;
+  background: url("../assets/images/banner.jpg");
+  background-size:cover;
+  position:relative;
 }
 
 .me {
-    content: url("https://avatars.githubusercontent.com/u/22485477?s=400&u=d1829ed9a0494d119401dc9cc15e36f7edfe379f&v=4");
-    max-width: 100%;
-    height: auto;
-    float:left;
-    margin: auto;
-    position: relative;
+  content: url("https://avatars.githubusercontent.com/u/22485477?s=400&u=d1829ed9a0494d119401dc9cc15e36f7edfe379f&v=4");
+  max-width: 100%;
+  height: auto;
+  float:left;
+  margin: auto;
+  position: relative;
 }
 
 .icon {
@@ -33,7 +33,7 @@
 form { 
   margin: 0 auto; 
   max-width: 100%;
-  }
+}
 
 .contact-button {
   width: 25%;
@@ -42,4 +42,28 @@ form {
   display: flex;
   justify-content: center;
   size: 100%;
+}
+
+.footer-icon {
+  font-size: 200%;
+  cursor: pointer;
+  display: block;
+}
+.fa-github:hover,.fa-linkedin:hover {
+  color: skyblue;
+}
+.fa {
+  color: white;
+  display: inline-block;
+}
+
+.faa {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+#footer {
+  margin-top: 5%;
+  background-color: black;
+  text-align:center;
 }
