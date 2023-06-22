@@ -8,6 +8,7 @@ import { Toast } from 'bootstrap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'Portfolio';
 
@@ -20,6 +21,8 @@ export class AppComponent {
 
   constructor(private commentService:CommentService) { }
   
+
+
   postComment(){
     this.comment = new Comment(this.name, this.email, this.subject, this.message)
     this.commentService.addComment(this.comment).subscribe((data)=>{
@@ -29,4 +32,3 @@ export class AppComponent {
     toastBootstrap.show()
   }
 }
-
