@@ -29,3 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run test:prod
     - run: npm run lint
+    - name: Deploy to gh pages
+      run: |
+        npx angular-cli-ghpages --dir=dist/StotTot.github.io
+      env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
